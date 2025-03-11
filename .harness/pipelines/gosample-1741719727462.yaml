@@ -50,14 +50,12 @@ pipeline:
                   identifier: build_go_app
                   name: Build Go App
                   spec:
-                    command: |-
-                      echo "Welcome to Harness CI"
-                      go build
-                      go test
+                    shell: Sh
+                    command: echo "Welcome to Harness CI" go build go test
           platform:
-            arch: Amd64
             os: Linux
+            arch: Amd64
           runtime:
-            spec: {}
             type: Docker
+            spec: {}
         type: CI
