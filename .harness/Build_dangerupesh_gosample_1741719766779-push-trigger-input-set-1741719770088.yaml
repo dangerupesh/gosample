@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_dangerupesh_gosample_1741719766779-push-trigger-input-set
+  identifier: Build_dangerupesh_gosample_1741719766779pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_dangerupesh_gosample_1741719766779
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
